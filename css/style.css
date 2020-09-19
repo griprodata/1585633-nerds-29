@@ -26,6 +26,7 @@ a {
 
 /********HEADER********/
 .main-header {
+    background:#EEEEEE;
 
 }
 
@@ -56,9 +57,10 @@ a {
 
 
 /***SLIDER***/
-.class-slider {
-
+.slider {
+    background:#EEEEEE;
 }
+
 
 .slider-title {
 font-family: "Roboto";
