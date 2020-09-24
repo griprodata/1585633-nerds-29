@@ -50,7 +50,10 @@ img {
 
 .main-header {
   background: var(--basic-space);
+  
 }
+
+
 
 .nav-item {
   list-style: none;
