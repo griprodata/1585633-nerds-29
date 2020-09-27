@@ -52,7 +52,16 @@ img {
   background: var(--basic-space);
   
 }
-
+.shop {
+  color: var(--basic-black);
+  font-size: 55px;
+  line-height: 55px;
+}
+.shop-title {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: bold;
+}
 
 
 .nav-item {
@@ -203,6 +212,75 @@ img {
 /* GALLERY */
 .gallery-list-item {
   list-style: none;
+}
+
+
+/* CATALOG */
+.catalog-top {
+  list-style: none;
+}
+
+
+.cat-link {
+  font-size: 14px;
+  line-height: 18px;
+  color: var(--basic-black);
+  text-transform: uppercase;
+  opacity: 0.3;
+}
+
+.link-black {
+  color: var(--basic-black);
+  opacity: 1;
+  }
+
+.cat-link:hover {
+ color: var(--basic-black);
+ opacity: 0.6;
+}
+.cat-link:active {
+  color: var(--basic-black);
+  opacity: 1;  <!-- ?  без него не работало-->
+}
+
+
+.catalog-list-item {
+  list-style: none;
+}
+
+
+.catalog-title a {
+  font-size:18px;
+  line-height: 30px;
+  color: var(--basic-black);
+  
+}
+
+.catalog-text {
+ color: var(--basic-gray-space);
+}
+
+.catalog-button {
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+.catalog-button:hover {
+  background-color: var(--medium-red);
+}
+.catalog-button:active {
+  background-color: var(--basic-dark-red);
+}
+
+.catalog-page-list {
+  list-style: none;
+}
+.catalog-btn {
+  background-color:var(--basic-space);
+  color: var(--basic-black);
+  border-radius: 3px;
+}
+.btn-active {
+  border: 3px solid #dbdbdb;
 }
 
 /* FOOTER */
