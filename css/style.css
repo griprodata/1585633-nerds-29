@@ -10,6 +10,8 @@
   --basic-extra-black: #283136; 
   --basic-gray-black: #444444;
   --basic-gray-space: #666666;
+  --basic-extra-space:#DfDfDf;
+  --basic-medium-space:#D5D5D5;
 
   --basic-red: #FB565A;
   --medium-red: #e74246;
@@ -61,6 +63,7 @@ img {
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 
@@ -216,6 +219,9 @@ img {
 
 
 /* CATALOG */
+.catalog-desc {
+  background-color: var(--basic-space);
+}
 .catalog-top {
   list-style: none;
 }
@@ -240,7 +246,7 @@ img {
 }
 .cat-link:active {
   color: var(--basic-black);
-  opacity: 1;  <!-- ?  без него не работало-->
+  opacity: 1;  /*  без него не работало */
 }
 
 
@@ -253,8 +259,15 @@ img {
   font-size:18px;
   line-height: 30px;
   color: var(--basic-black);
-  
-}
+  text-transform: uppercase;
+  }
+  .catalog-title a:hover {
+ color: var(--basic-red);
+  }
+  .catalog-title a:active {
+    color: var(--basic-black);
+    opacity: 0.3;
+     }
 
 .catalog-text {
  color: var(--basic-gray-space);
@@ -279,6 +292,20 @@ img {
   color: var(--basic-black);
   border-radius: 3px;
 }
+
+.catalog-btn:hover {
+  background-color:var(--basic-extra-space);
+  color: var(--basic-black);
+  
+}
+
+.catalog-btn:active {
+  background-color:var(--basic-medium-space);
+  color: var(--basic-black);
+
+  
+}
+
 .btn-active {
   border: 3px solid #dbdbdb;
 }
