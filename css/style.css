@@ -90,9 +90,6 @@ img {
   grid-template-columns: 300px 300px 300px;
   gap: 100px;
 }
-.footer {
-  display: grid;
-  grid-template-columns: auto auto;
 
 
 /*   HEADER   */
@@ -139,6 +136,7 @@ img {
 /*  SLIDER  */
 .slider {
   background: var(--basic-space);
+
 }
 
 .slider-title {
