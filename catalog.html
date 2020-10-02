@@ -12,7 +12,7 @@
         
     <body class="page-body">
         <header class="main-header">
-            <nav class="header-navigation">
+            <nav class="header-navigation container">
                 <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="159" height="65" alt="Логотип Nerds"></a>
                 <ul class="site-navigation">
                     <li class="nav-item"><a class="nav-link" href="#">Студия</a></li>
@@ -23,37 +23,79 @@
                 <a class="nav-link" href="#">Корзина</a>
             </nav>
 
-            <h1 class="shop">Магазин готовых шаблонов</h1>
+            <h1 class="shop container">Магазин готовых шаблонов</h1>
         </header>
 
-        <main>
-           <form>
-            <h3 class="shop-title">Стоимость:</h3> 
-            СЕТКА<br>
-            <label for="">
-             <input type="radio" checked>Адаптивная<br>
-            </label>
-            <label for="">
-             <input type="radio">Фиксированная<br>
-            </label>
-            <label for="">
-             <input type="radio">Резиновая<br>
-            </label>
+        <main class="main">
+          <div class="container">
+            <div class="toto">
 
-            ОСОБЕННОСТИ<br>
-            <input type="checkbox" checked>Слайдер<br>
-            <input type="checkbox">Блок преимуществ<br>
-            <input type="checkbox" checked>Новости<br>
-            <input type="checkbox">Галерея<br>
-            <input type="checkbox">Корзина<br>
+           <form method="get" action="">
+             <fieldset class="filter-item">
+               <legend>Стоимость:</legend>
+               <div class="range-filter">
+                 <div class="range-controls">
+                   <div class="scale">
+                     <div class="bar"></div>
+                   </div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
+                 </div>
+                 <div class="price-controls">
+                   <label class="min-price">
+                    от <input type="number" name="min-price" value="0">
+                   </label>
+                   <label class="max-price">
+                    до <input type="number" name="max-price" value="15000">
+                   </label>
+                 </div>
+               </div>
+             </fieldset>
 
-            <button> Показать</button>
-           
+            <legend>СЕТКА</legend>
+           <ul>
+            <li class="filter-option filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="shaving" id="filter-shave" checked>
+              <label for="filter-shave">Адаптивная</label>
+            </li>
+            <li class="filter-option filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="shaving" id="filter-shave">
+              <label for="filter-shave">Фиксированная</label>
+            </li>
+            <li class="filter-option filter-radio">
+              <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-group" value="shaving" id="filter-shave">
+              <label for="filter-shave">Резиновая</label>
+            </li>
+           </ul>
+
+           <legend>ОСОБЕННОСТИ</legend>
+        <ul>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+            <label for="filter-baxter-of-california">Слайдер</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california">
+            <label for="filter-baxter-of-california">Блок преимуществ</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california" checked>
+            <label for="filter-baxter-of-california">Новости</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california">
+            <label for="filter-baxter-of-california">Галерея</label>
+          </li>
+          <li class="filter-option filter-checkbox">
+            <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="baxter-of-california" id="filter-baxter-of-california">
+            <label for="filter-baxter-of-california">Корзина</label>
+          </li>
+
+            <button type="button">Показать</button>
            </form>
 
-            <section class="catalog">  
-                
-             <div >
+            <section class="catalog">     
+             <div>
                   <h3 class="shop-title">Сортировать:</h3>
                     <ul class="catalog-top">
                      <li class="cat-item"><a class="cat-link link-black" href="#">По цене</a></li>
@@ -119,8 +161,7 @@
                                 </div>
                              </li>
                      </ul>
-
-
+                    </div>
 
 <ul class="catalog-page-list">
     <li><a class="catalog-btn btn-active" href="#" aria-label="Перейти на первую страницу каталога">1</a></li>
@@ -129,12 +170,13 @@
     <li><a class="catalog-btn" href="#" aria-label="Перейти на следующую страницу каталога">Следующая</a></li>
   </ul>
 </section>
-
+</div>
     </main> 
 
  <footer class="footer">
 
     <img class="footer-img" src="img/map.jpg" width="1440" height="416" alt="Карта">
+    <div class="footer-content container">
   <div class="footer-contacts">
   <p class="footer-contacts-title">Nerds DESIGN STUDIO</p> 
   <p class="footer-contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8
@@ -152,7 +194,7 @@
   <p class="footer-title">Давайте дружить, это выгодно!</p>
   <p class="footer-text">Скидка 10% из социальных сетей.</p>
 
-
+</div>
 </footer>
 
  
