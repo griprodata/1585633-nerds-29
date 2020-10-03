@@ -85,7 +85,7 @@ img {
 .toto {
   display: grid;
   grid-template-columns: 260px 1fr;
-  gap: 10px;
+  gap: 140px;
 }
 
 
