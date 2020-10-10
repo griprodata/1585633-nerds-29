@@ -11,22 +11,19 @@
   </head>
 
   <body class="page-body">
-
     <header class="main-header">
 
-      <nav class="header-navigation container">
+      <nav class="main-header-nav container">
 
         <a class="main-header-logo" href="index.html"><img src="img/nerds-logo.svg" width="159" height="65"
             alt="Логотип Nerds"></a>
-
         <ul class="site-navigation">
-          <li class="nav-item"><a class="nav-link" href="#">Студия</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Клиенты</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Магазин</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Контакты</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Студия</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Клиенты</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
         </ul>
-        <a class="nav-link" href="#">Корзина</a>
-
+        <a class="site-navigation-link basket" href="#">Корзина</a>
       </nav>
 
       <h1 class="shop container">Магазин готовых шаблонов</h1>
@@ -112,14 +109,14 @@
             </ul>
           </fieldset>
 
-          <button type="button">Показать</button>
+          <button  class="btn-form "type="button">Показать</button>
 
         </form>
 
 
         <section class="catalog">
 
-          <div>
+          <div class="catalog-block">
             <h3 class="shop-title">Сортировать:</h3>
             <ul class="catalog-top">
               <li class="cat-item"><a class="cat-link link-black" href="#">По цене</a></li>
@@ -193,49 +190,45 @@
             <li><a class="catalog-btn" href="#" aria-label="Перейти на следующую страницу каталога">Следующая</a></li>
           </ul>
 
-
         </section>
 
       </div>
 
-    
-
-
     </main>
 
 
-
-
-
     <footer class="footer">
-      <div class="content-image">
-          <img class="footer-img" src="img/map.jpg" width="1440" height="416" alt="Карта">
-          <div class="footer-contacts">
-            <p class="footer-contacts-title">Nerds DESIGN STUDIO</p>
-            <p class="footer-contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
-              тел.<a class="contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-            <a class="footer-contact-link" href="#">НАПИШИТЕ НАМ</a>
-          </div>
-          </div>
-        
-          <div class="footer-content container">
-           
-      <div class="footer-social">
+
+      <div class="footer-content-top">
+
+        <img class="footer-img" src="img/map.jpg" width="1440" height="416" alt="Карта">
+        <div class="footer-contacts container">
+          <p class="footer-contacts-title">Nerds DESIGN STUDIO</p>
+          <p class="footer-contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
+            тел.<a class="footer-contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
+          <a class="footer-contact-link" href="#">НАПИШИТЕ НАМ</a>
+        </div>
+
+      </div>
+
+      <div class="footer-content-bottom container">
+
         <div class="footer-social-block">
-            <ul class="footer-list">
-              <li class="footer-list-item"><a class="footer-item-link" href="#" aria-label="vkontakte"></a></li>
-              <li class="footer-list-item"><a class="footer-item-link" href="#" aria-label="facebook"></a></li>
-              <li class="footer-list-item"><a class="footer-item-link" href="#" aria-label="instagram"></a></li>
-            </ul>
-          </div>
-          <div class="footer-social-block">
-            <p class="footer-title">Давайте дружить, это выгодно!</p>
-            <p class="footer-text">Скидка 10% из социальных сетей.</p>
-            </div>
-            </div>
-      
-          </div>
-        </footer>
+          <ul class="footer-list">
+            <li class="footer-item"><a class="footer-link vk" href="#" aria-label="vkontakte"></a></li>
+            <li class="footer-item"><a class="footer-link fb" href="#" aria-label="facebook"></a></li>
+            <li class="footer-item"><a class="footer-link insta" href="#" aria-label="instagram"></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-social-block">
+          <p class="footer-title">Давайте дружить, это выгодно!</p>
+          <p class="footer-text">Скидка 10% из социальных сетей.</p>
+        </div>
+
+      </div>
+
+    </footer>
 
   </body>
 
