@@ -25,106 +25,118 @@
         </ul>
         <a class="site-navigation-link basket" href="#">Корзина</a>
       </nav>
-
-      <h1 class="shop container">Магазин готовых шаблонов</h1>
-
     </header>
 
 
     <main class="main">
 
+      <section class="catalog-article conteiner">
+        <h1 class="shop ">Магазин готовых шаблонов</h1>
+      </section>
+
       <div class="form-catalog container">
-
-        <form method="get" action="#">
-          <fieldset class="filter-item">
-            <legend>Стоимость:</legend>
-            <div class="range-filter">
-              <div class="range-controls">
-                <div class="scale">
-                  <div class="bar"></div>
+          <div class="filters">
+            <h2 class="visually-hidden">Фильтр товаров</h2>
+           <form action="#" method="get">
+            <fieldset class="filter-item">
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+                <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
                 </div>
-                <div class="toggle toggle-min" tabindex="0"></div>
-                <div class="toggle toggle-max" tabindex="0"></div>
+                <div class="price-controls">
+                  <label class="min-price">
+                    от <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">
+                    до <input type="text" name="max-price" value="15000">
+                  </label>
+          
+                </div>
               </div>
-              <div class="price-controls">
-                <label class="min-price">
-                  от <input type="number" name="min-price" value="0">
-                </label>
-                <label class="max-price">
-                  до <input type="number" name="max-price" value="15000">
-                </label>
-              </div>
-            </div>
-          </fieldset>
+            </fieldset>
 
-          <fieldset class="filter-item">
-            <legend>СЕТКА</legend>
-            <ul>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-verstka"
-                  value="shaving" id="filter-adaptive" checked>
-                <label for="filter-adaptive">Адаптивная</label>
-              </li>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-verstka"
-                  value="shaving" id="filter-fixed">
-                <label for="filter-fixed">Фиксированная</label>
-              </li>
-              <li class="filter-option filter-radio">
-                <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-verstka"
-                  value="shaving" id="filter-rubber">
-                <label for="filter-rubber">Резиновая</label>
-              </li>
-            </ul>
-          </fieldset>
+           <fieldset>
+             <legend>Сетка:</legend>
+             <ul>
+               <li class="filter-option filter-radio">
+                 <input class="visually-hidden filter-input-radio-active filter-input" type="radio" 
+                 name="product-verstka" value="adaptive" id="filter-adaptive">
+                 <label for="filter-adaptive">Адаптивная</label>
+               </li>
+               <li class="filter-option filter-radio">
+                 <input class="visually-hidden filter-input-radio filter-input" type="radio" 
+                 name="product-verstka" value="fixed" id="filter-fixed">
+                 <label for="-filter-fixed">Фиксированная</label>
+               </li>
+               <li class="filter-option filter-radio">
+                 <input class="visually-hidden filter-input-radio filter-input" type="radio" 
+                 name="product-verstka" value="rubber" id="filter-rubber">
+                 <label for="-filter-rubber">Резиновая</label>
+               </li>
+             </ul>
+           </fieldset>
+           
+           <fieldset>
+           <legend>Особенности:</legend>
+           <ul>
+             <li class="filter-option filter-checkbox">
+               <input class="visually-hidden filter-input-checkbox-active filter-input" type="checkbox" name="slider"
+                 id="filter-slider" checked>
+               <label for="filter-slider">Слайдер</label>
+             </li>
+             <li class="filter-option filter-checkbox">
+               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages"
+                 id="filter-advantages">
+               <label for="filter-advantages">Блок преимуществ</label>
+             </li>
+             <li class="filter-option filter-checkbox">
+               <input class="visually-hidden filter-input-checkbox-active filter-input" type="checkbox" name="news"
+                 id="filter-news" checked>
+               <label for="filter-news">Новости</label>
+             </li>
+             <li class="filter-option filter-checkbox">
+               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery"
+                 id="filter-gallery">
+               <label for="filter-gallery">Галерея</label>
+             </li>
+             <li class="filter-option filter-checkbox">
+               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket"
+                 id="filter-basket">
+               <label for="filter-basket">Корзина</label>
+             </li>
+           </ul>
+           </fieldset>
+           <button  class="btn-form "type="button">Показать</button>
+           </form>
+           </div>
+            
+         
 
-          <fieldset class="filter-item">
-            <legend>ОСОБЕННОСТИ</legend>
-            <ul class="filrer-list">
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider"
-                  id="filter-slider" checked>
-                <label for="filter-slider">Слайдер</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages"
-                  id="filter-advantages">
-                <label for="filter-advantages">Блок преимуществ</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news"
-                  id="filter-news" checked>
-                <label for="filter-news">Новости</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery"
-                  id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
-              </li>
-              <li class="filter-option filter-checkbox">
-                <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket"
-                  id="filter-basket">
-                <label for="filter-basket">Корзина</label>
-              </li>
-            </ul>
-          </fieldset>
+        
 
-          <button  class="btn-form "type="button">Показать</button>
-
-        </form>
+    
 
 
         <section class="catalog">
 
           <div class="catalog-block">
+
             <h3 class="shop-title">Сортировать:</h3>
             <ul class="catalog-top">
-              <li class="cat-item"><a class="cat-link link-black" href="#">По цене</a></li>
+              <li class="cat-item"><a class="cat-link" href="#">По цене</a></li>
               <li class="cat-item"><a class="cat-link" href="#">По типу</a></li>
               <li class="cat-item"><a class="cat-link" href="#">По названию</a></li>
-              <li class="cat-item"><a class="cat-link link-black" href="#" aria-label="вниз"></a></li>
-              <li class="cat-item"><a class="cat-link" href="#" aria-label="вверх"></a></li>
+              <li class="cat-item">
+                <a class="down" href="#" aria-label="вниз"></a>
+                <a  class="up" href="#" aria-label="вверх"></a>
+            </li>
             </ul>
+
           </div>
 
           <ul class="catalog-list">
@@ -187,7 +199,7 @@
             <li><a class="catalog-btn btn-active" href="#" aria-label="Перейти на первую страницу каталога">1</a></li>
             <li><a class="catalog-btn" href="#" aria-label="Перейти на вторую страницу каталога">2</a></li>
             <li><a class="catalog-btn" href="#" aria-label="Перейти на третью страницу каталога">3</a></li>
-            <li><a class="catalog-btn" href="#" aria-label="Перейти на следующую страницу каталога">Следующая</a></li>
+            <li><a class="catalog-btn btn-next" href="#" aria-label="Перейти на следующую страницу каталога">Следующая</a></li>
           </ul>
 
         </section>
@@ -204,7 +216,7 @@
         <img class="footer-img" src="img/map.jpg" width="1440" height="416" alt="Карта">
         <div class="footer-contacts">
           <p class="footer-contacts-title">Nerds DESIGN STUDIO</p>
-          <p class="footer-contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br>
+          <p class="footer-contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br><br>
             тел.<a class="footer-contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
           <a class="footer-contact-link" href="#">НАПИШИТЕ НАМ</a>
         </div>
@@ -213,23 +225,26 @@
 
       <div class="footer-content-bottom container">
 
-        <div class="footer-social-block">
           <ul class="footer-list">
             <li class="footer-item"><a class="footer-link vk" href="#" aria-label="vkontakte"></a></li>
             <li class="footer-item"><a class="footer-link fb" href="#" aria-label="facebook"></a></li>
             <li class="footer-item"><a class="footer-link insta" href="#" aria-label="instagram"></a></li>
           </ul>
-        </div>
+       
 
         <div class="footer-social-block">
           <p class="footer-title">Давайте дружить, это выгодно!</p>
-          <p class="footer-text">Скидка 10% из социальных сетей.</p>
+          <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
 
       </div>
 
     </footer>
 
+
+
   </body>
 
   </html>
+
+  
