@@ -46,7 +46,7 @@
 
         </div>
 
-        <div class="slider-list ">
+        <div class="slider-list">
           <p class="slider-title">Любим математику как никто другой</p>
           <p class="slider-text">Никакого креатива, только математические формулы для расчета идеальных пропорций
           </p>
@@ -63,7 +63,7 @@
         </div>
         
         <div class="slider-controls">
-          <button class="slider-control-btn" type="button" aria-label="Первый слайд"></button>
+          <button class="slider-control-btn1" type="button" aria-label="Первый слайд"></button>
           <button class="slider-control-btn" type="button" aria-label="Второй слайд"></button>
           <button class="slider-control-btn"  type="button" aria-label="Третий слайд"></button>
         </div>
@@ -199,18 +199,20 @@
   <section class="modal modal-email">
     <h2>Напишите нам</h2>
     <form class="modal-form" action="#" method="POST">
-      <p class="form-name"><label for="your-name">Ваше имя:
+      <p class="form-name">
+        <label for="your-name">Ваше имя:
           <input class="login-icon-name" type="text" name="name" id="your-name" placeholder="Имя Фамилия">
-        </label></p>
+        </label>
+      </p>
+      <p class="form-name">
       <label for="your-email">Ваш email:
         <input class="login-icon-email" type="email" name="email" id="your-email" placeholder="email@example.com">
       </label>
-      <label>Текст письма
-        <textarea name="" id="" cols="30" rows="10" placeholder="В свободной форме"></textarea>
-      </label>
-      <button type="submit">Отправить</button>
+      </p>
+   
+      <button class="slider-link" type="submit">Отправить</button>
     </form>
-    <button class="modal-close" type="submit">Закрыть</button>
+    <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
 </body>
 
