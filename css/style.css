@@ -104,7 +104,7 @@ img {
   justify-content: space-between;
   flex-wrap: wrap;
   align-items: center;
-  margin-top: 59px;
+  margin-top: 58px;
 }
 
 .nav-logo {
@@ -131,11 +131,12 @@ img {
   text-align: center;
   margin: 0;
   
-  margin-bottom: 55px;
+  margin-bottom: 56px;
 }
 
 .shop-title {
   margin: 0;
+  margin-top: 2px;
   font-size: 18px;
   line-height: 30px;
   font-weight: bold;
@@ -162,7 +163,7 @@ img {
 }
 
 .site-navigation-link:active {
-  color: var(--basic-black);
+  color:  rgba(0, 0, 0, 0.3);
 }
 
 
@@ -170,7 +171,7 @@ img {
   content: "";
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -15px;
   width: 100%;
   height: 2px;
   background: var(  --basic-red);
@@ -202,7 +203,7 @@ img {
 
 
 .slider {
-  margin-bottom: 79px;
+  margin-bottom: 80px;
   margin-top: -6px;
   background: var(--basic-space);
   position: relative;
@@ -217,6 +218,7 @@ img {
 
 .slider-active {
   display: flex;
+
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
@@ -431,7 +433,7 @@ img {
 .working {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 50px;
+  margin-bottom: 49px;
 
 
 }
@@ -448,7 +450,7 @@ img {
 
 .working-title {
   margin: 0;
-  margin-bottom: 31px;
+  margin-bottom: 33px;
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
@@ -569,10 +571,10 @@ img {
 
 .gallery {
   padding-top: 49px;
-  padding-bottom: 35px;
+  padding-bottom: 34px;
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 79px;
+  margin-bottom: 80px;
 }
 
 .gallery-list {
@@ -632,9 +634,9 @@ display: none;
 
 .catalog-article {
   margin: 0;
-  padding-top: 67px;
-  padding-bottom: 55px;
-  margin-bottom: 53px;
+  padding-top: 71px;
+  padding-bottom: 53px;
+  margin-bottom: 54px;
 
   background: var(--basic-space);
 }
@@ -644,8 +646,8 @@ display: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 83px;
-  /* временно */
+  margin-bottom: 88px;
+ 
 }
 
 .catalog-top {
@@ -655,22 +657,56 @@ display: none;
   justify-content: space-between;
 }
 
+.cat-item {
+  margin-right: 24px;
+}
+
+.cat-item:nth-last-child(4) {
+  margin-right: 35px;
+}
+
+
 .cat-link {
   font-size: 14px;
   line-height: 18px;
   color: var(--basic-black);
   text-transform: uppercase;
   opacity: 0.3;
-  margin-right: 25px;
+  
+}
+
+
+.cat-link:hover {
+  color: var(--basic-black);
+  opacity: 0.6;
+}
+
+.down:hover {
+  opacity: 0.6;
+}
+.up:hover {
+  opacity: 0.6;
+}
+
+.cat-link:active {
+  color: var(--basic-black);
+  opacity: 1;
+}
+.down:active {
+  opacity: 1;
+}
+.up:active {
+  opacity: 1;
 }
 
 .down {
   display: inline-block;
   width: 11px;
   height: 10px;
-  background-image: url(../img/icon-down-dir1.svg);
+  background-image: url(../img/icon-down-dir.svg);
   background-repeat: no-repeat;
-  margin-right: 18px;
+  margin-right: 15px;
+  opacity: 0.3;
 }
 
 
@@ -680,33 +716,9 @@ display: none;
   height: 10px;
   background-image: url(../img/icon-up-dir.svg);
   background-repeat: no-repeat;
-  margin: 0;
-  margin-right: 18px;
+
+  opacity: 0.3;
 }
-
-.up:hover::before {
-  background: var(--basic-black);
-  opacity: 0.6;
-}
-
-
-.up:active {
-  color: var(--basic-black);
-  opacity: 1;
-  /*  без него не работало */
-}
-
-.cat-link:hover {
-  color: var(--basic-black);
-  opacity: 0.6;
-}
-
-.cat-link:active {
-  color: var(--basic-black);
-  opacity: 1;
-  /*  без него не работало */
-}
-
 
 .catalog-list {
   display: grid;
@@ -714,8 +726,8 @@ display: none;
   grid-template-rows: 1fr 1fr;
   margin: 0;
   padding: 0;
-  gap: 42px;
-  margin-bottom: 55px;
+  gap: 35px;
+  margin-bottom: 15px;
 }
 
 .catalog-list-item {
@@ -737,9 +749,7 @@ display: none;
   background-position: 0 0;
 }
 
-.catalog-block {
-  margin-bottom: 48px;
-}
+
 
 .catalog-desc {
   display: none;
@@ -763,8 +773,8 @@ display: none;
 
 .catalog-title {
   margin: 0;
-  margin-top: 26px;
-  margin-bottom: 12px;
+  margin-top: 22px;
+  margin-bottom: 9px;
 }
 
 .catalog-title a {
@@ -785,7 +795,7 @@ display: none;
 
 .catalog-text {
   margin: 0;
-  margin-bottom: 32px;
+  margin-bottom: 38px;
   color: var(--basic-gray-space);
 }
 
@@ -809,18 +819,19 @@ display: none;
   flex-wrap: wrap;
   list-style: none;
   padding: 0;
+  margin: 0;
 
 }
 
 .catalog-btn {
   min-width: 50px;
   height: 50px;
-
+  text-transform: uppercase;
   display: block;
   background-color: var(--basic-space);
   color: var(--basic-black);
   border-radius: 3px;
-  padding: 15px 20px 17px 20px;
+  padding: 16px 20px 15px 20px;
   margin-right: 11px;
 
 }
@@ -840,6 +851,7 @@ display: none;
 }
 
 .btn-active {
+
   border: 3px solid #dbdbdb;
   background-color: #ffffff;
   ;
@@ -861,7 +873,7 @@ display: none;
 .range-filter {
   width: 260px;
   height: 80px;
-  margin-top: 49px;
+  margin-top: 51px;
 }
 
 .filter-item legend {
@@ -874,12 +886,12 @@ display: none;
 .range-controls {
   position: relative;
   height: 80px;
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   padding-top: 39px;
   padding-right: 20px;
   padding-left: 20px;
   background-color: #f1f1f1;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 
 .range-controls .scale {
@@ -895,12 +907,12 @@ display: none;
 
 .range-controls .toggle {
   position: absolute;
-  top: 31px;
+  top: 30px;
   left: 0;
   width: 4px;
   height: 4px;
   padding: 0;
-  border: 8px solid #ffffff;
+  border: 10px solid #ffffff;
   background-color: #ababab;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -929,11 +941,11 @@ display: none;
 .price-controls input {
   width: 80px;
   padding: 10px;
-  margin-left: 10px;
+  margin-left: 8px;
   text-align: center;
   color: #283136;
   border: none;
-  border-radius: 5px;
+  border-radius: 3px;
   background: #f1f1f1;
   font-family: inherit;
   font-size: inherit;
@@ -943,27 +955,37 @@ display: none;
 
 
 .filters {
+  margin-top: 2px;
   width: 260px;
 
 }
 
 .filters ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-top: 14px;
+  padding-left: 37px;
+  margin-bottom: -83px;
 }
 
 .filters fieldset {
   padding: 0;
   margin: 0;
-  margin-bottom: 16px;
+  margin-top: 2px;
+  margin-bottom: 106px;
   border: none;
 }
 
-.filters legend {
+fieldset legend{
   margin: 0;
+  text-transform: uppercase;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
 }
+
+
 
 .filter-option label {
   position: relative;
@@ -971,6 +993,7 @@ display: none;
   cursor: pointer;
   user-select: none;
   padding-bottom: 20px;
+  margin-bottom: -4px;
 }
 
 
@@ -982,41 +1005,59 @@ display: none;
   width: 25px;
   height: 25px;
   background-image: url(../img/radio-on.svg);
+  transform: translateX(-150%);
+  opacity: 0.3;
 }
 
 .filter-input-radio+label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: 0;
   top: 0;
   width: 25px;
   height: 25px;
   background-image: url(../img/radio-off.svg);
+  transform: translateX(-150%);
+  opacity: 0.3;
 }
 
 .filter-input-checkbox+label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: 0;
   top: 0;
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
+  transform: translateX(-150%);
+  opacity: 0.3;
 }
 
 .filter-input-checkbox-active+label::before {
   content: "";
   position: absolute;
-  left: -42px;
+  left: 0;
   top: 0;
   width: 26px;
   height: 23px;
   background-image: url(../img/checkbox-on.svg);
+  transform: translateX(-150%);
+  opacity: 0.3;
 }
 
-.filter-input-radio-active+label:hover {
-
+.filter-input-checkbox+label::before:hover {
   opacity: 1;
+}
+.filter-input-checkbox-active+label::before:hover {
+opacity: 1;
+}
+
+.filter-input-checkbox+label::before:active {
+  opacity: 0.3;
+}
+
+.filter-input-checkbox-active+label::before:active {
+opacity: 0.3;
 }
 
 
@@ -1033,12 +1074,17 @@ display: none;
   width: 260px;
   background-color: #eeeeee;
   border-radius: 3px;
+  margin-top: 4px;
   padding: 17px 88px 15px 89px;
 }
 
 .filter-radio {
   position: relative;
+  margin-bottom: -4px;
 }
+
+
+
 
 
 
@@ -1074,6 +1120,7 @@ display: none;
  text-align: left;
   margin: 0;
   margin-bottom: 23px;
+  margin-top: -4px;
   font-weight: bold;
   line-height: 30px;
   color: var(--basic-black);
@@ -1086,7 +1133,7 @@ display: none;
   margin: 0;
   line-height: 18px;
   color: var(--basic-gray-space);
-  margin-bottom: 36px;
+  margin-bottom: 37px;
 
 }
 
@@ -1099,10 +1146,10 @@ display: none;
   display: block;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  padding: 17px 44px 17px 44px;
+  padding: 13px 44px 16px 44px;
   height: 50px;
   border-radius: 3px;
-  margin-bottom: 47px;
+
 }
 
 .footer-contact-link:hover {
