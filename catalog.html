@@ -12,32 +12,29 @@
 
   <body class="page-body">
     <header class="main-header">
-
       <nav class="main-header-nav container">
-
-        <a class="main-header-logo" href="index.html"><img class="nav-logo" src="img/nerds-logo.svg" width="159" height="65"
-            alt="Логотип Nerds"></a>
+        <a class="main-header-logo" href="index.html"><img class="nav-logo" src="img/nerds-logo.svg" width="159"
+            height="65" alt="Логотип Nerds"></a>
         <ul class="site-navigation">
           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Студия</a></li>
           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Клиенты</a></li>
-          <li class="site-navigation-item"><a class="site-navigation-link link-shop" href="catalog.html">Магазин</a></li>
+          <li class="site-navigation-item"><a class="site-navigation-link link-shop" href="catalog.html">Магазин</a>
+          </li>
           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
         </ul>
         <a class="site-navigation-link basket" href="#">Корзина</a>
       </nav>
     </header>
 
-
     <main class="main">
-
       <section class="catalog-article conteiner">
         <h1 class="shop ">Магазин готовых шаблонов</h1>
       </section>
 
       <div class="form-catalog container">
-          <div class="filters">
-            <h2 class="visually-hidden">Фильтр товаров</h2>
-           <form action="#" method="get">
+        <div class="filters">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form action="#" method="get">
             <fieldset class="filter-item">
               <legend>Стоимость:</legend>
               <div class="range-filter">
@@ -55,88 +52,77 @@
                   <label class="max-price">
                     до <input type="text" name="max-price" value="15 000">
                   </label>
-          
                 </div>
               </div>
             </fieldset>
 
-           <fieldset >
-             <legend >Сетка:</legend>
-             <ul>
-               <li class="filter-option filter-radio">
-                 <input class="visually-hidden filter-input-radio-active filter-input" type="radio" 
-                 name="product-verstka" value="adaptive" id="filter-adaptive">
-                 <label for="filter-adaptive">Адаптивная</label>
-               </li>
-               <li class="filter-option filter-radio">
-                 <input class="visually-hidden filter-input-radio filter-input" type="radio" 
-                 name="product-verstka" value="fixed" id="filter-fixed">
-                 <label for="-filter-fixed">Фиксированная</label>
-               </li>
-               <li class="filter-option filter-radio">
-                 <input class="visually-hidden filter-input-radio filter-input" type="radio" 
-                 name="product-verstka" value="rubber" id="filter-rubber">
-                 <label for="-filter-rubber">Резиновая</label>
-               </li>
-             </ul>
-           </fieldset>
-           
-           <fieldset>
-           <legend >Особенности:</legend>
-           <ul>
-             <li class="filter-option filter-checkbox">
-               <input class="visually-hidden filter-input-checkbox-active filter-input" type="checkbox" name="slider"
-                 id="filter-slider" checked>
-               <label for="filter-slider">Слайдер</label>
-             </li>
-             <li class="filter-option filter-checkbox">
-               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages"
-                 id="filter-advantages">
-               <label for="filter-advantages">Блок преимуществ</label>
-             </li>
-             <li class="filter-option filter-checkbox">
-               <input class="visually-hidden filter-input-checkbox-active filter-input" type="checkbox" name="news"
-                 id="filter-news" checked>
-               <label for="filter-news">Новости</label>
-             </li>
-             <li class="filter-option filter-checkbox">
-               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery"
-                 id="filter-gallery">
-               <label for="filter-gallery">Галерея</label>
-             </li>
-             <li class="filter-option filter-checkbox">
-               <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket"
-                 id="filter-basket">
-               <label for="filter-basket">Корзина</label>
-             </li>
-           </ul>
-           </fieldset>
-           <button  class="btn-form "type="button">Показать</button>
-           </form>
-           </div>
-            
-         
+            <fieldset>
+              <legend>Сетка:</legend>
+              <ul>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio-active filter-input" type="radio"
+                    name="product-verstka" value="adaptive" id="filter-adaptive">
+                  <label for="filter-adaptive">Адаптивная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-verstka"
+                    value="fixed" id="filter-fixed">
+                  <label for="-filter-fixed">Фиксированная</label>
+                </li>
+                <li class="filter-option filter-radio">
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-verstka"
+                    value="rubber" id="filter-rubber">
+                  <label for="-filter-rubber">Резиновая</label>
+                </li>
+              </ul>
+            </fieldset>
 
-        
-
-    
-
+            <fieldset>
+              <legend>Особенности:</legend>
+              <ul>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox-active filter-input" type="checkbox" name="slider"
+                    id="filter-slider" checked>
+                  <label for="filter-slider">Слайдер</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages"
+                    id="filter-advantages">
+                  <label for="filter-advantages">Блок преимуществ</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox-active filter-input" type="checkbox" name="news"
+                    id="filter-news" checked>
+                  <label for="filter-news">Новости</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery"
+                    id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                </li>
+                <li class="filter-option filter-checkbox">
+                  <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket"
+                    id="filter-basket">
+                  <label for="filter-basket">Корзина</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button class="btn-form " type="button">Показать</button>
+          </form>
+        </div>
 
         <section class="catalog">
-
           <div class="catalog-block">
-
             <h3 class="shop-title">Сортировать:</h3>
             <ul class="catalog-top">
-              <li class="cat-item"><a class="cat-link" href="#">По цене</a></li>
+              <li class="cat-item"><a class="cat-link cat-link-black" href="#">По цене</a></li>
               <li class="cat-item"><a class="cat-link" href="#">По типу</a></li>
               <li class="cat-item"><a class="cat-link" href="#">По названию</a></li>
               <li class="cat-item">
-                <a class="down" href="#" aria-label="вниз"></a>
+                <a class="down cat-link-black" href="#" aria-label="вниз"></a>
                 <a class="up" href="#" aria-label="вверх"></a>
-            </li>
+              </li>
             </ul>
-
           </div>
 
           <ul class="catalog-list">
@@ -196,12 +182,15 @@
           </ul>
 
           <ul class="catalog-page-list">
-            <li class="catalog-page-item"><a class="catalog-btn btn-active" href="#" aria-label="Перейти на первую страницу каталога">1</a></li>
-            <li class="catalog-page-item"><a class="catalog-btn" href="#" aria-label="Перейти на вторую страницу каталога">2</a></li>
-            <li class="catalog-page-item"><a class="catalog-btn" href="#" aria-label="Перейти на третью страницу каталога">3</a></li>
-            <li class="catalog-page-item"><a class="catalog-btn btn-next" href="#" aria-label="Перейти на следующую страницу каталога">Следующая</a></li>
+            <li class="catalog-page-item"><a class="catalog-btn btn-active" href="#"
+                aria-label="Перейти на первую страницу каталога">1</a></li>
+            <li class="catalog-page-item"><a class="catalog-btn" href="#"
+                aria-label="Перейти на вторую страницу каталога">2</a></li>
+            <li class="catalog-page-item"><a class="catalog-btn" href="#"
+                aria-label="Перейти на третью страницу каталога">3</a></li>
+            <li class="catalog-page-item"><a class="catalog-btn btn-next" href="#"
+                aria-label="Перейти на следующую страницу каталога">Следующая</a></li>
           </ul>
-
         </section>
 
       </div>
@@ -210,9 +199,7 @@
 
 
     <footer class="footer">
-
       <div class="footer-content-top">
-
         <img class="footer-img" src="img/map.jpg" width="1440" height="416" alt="Карта">
         <div class="footer-contacts">
           <p class="footer-contacts-title">Nёrds DESIGN STUDIO</p>
@@ -220,31 +207,45 @@
             тел. <a class="footer-contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
           <a class="footer-contact-link" href="#">НАПИШИТЕ НАМ</a>
         </div>
-
       </div>
 
       <div class="footer-content-bottom container">
-
-          <ul class="footer-list">
-            <li class="footer-item"><a class="footer-link vk" href="#" aria-label="vkontakte"></a></li>
-            <li class="footer-item"><a class="footer-link fb" href="#" aria-label="facebook"></a></li>
-            <li class="footer-item"><a class="footer-link insta" href="#" aria-label="instagram"></a></li>
-          </ul>
-       
-
+        <ul class="footer-list">
+          <li class="footer-item"><a class="footer-link vk" href="#" aria-label="vkontakte"></a></li>
+          <li class="footer-item"><a class="footer-link fb" href="#" aria-label="facebook"></a></li>
+          <li class="footer-item"><a class="footer-link insta" href="#" aria-label="instagram"></a></li>
+        </ul>
         <div class="footer-social-block">
           <p class="footer-title">Давайте дружить, это выгодно!</p>
           <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
         </div>
-
       </div>
-
     </footer>
 
 
+    <section class="modal modal-email">
+      <h2>Напишите нам</h2>
+  
+      <form class="modal-form" action="#" method="POST">
+        <fieldset>
+          <label class="modal-input-title" for="your-name">Ваше имя:
+            <input class="login-icon" type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+          </label>
+          <label class="modal-input-title" for="your-email">Ваш email:
+            <input class="login-icon" type="email" name="email" id="your-email" placeholder="email@example.com">
+          </label>
+          <label  class="modal-input-title form-message" for="your-email">Текст письма:
+          <textarea class="login-icon form-message" name="email"   rows="5" id="your-email"  placeholder="В свободной форме"></textarea>
+          </label>
+        </fieldset>
+  
+        <button class="form-link" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+<script src="login.js"></script>
 
   </body>
 
   </html>
-
-  

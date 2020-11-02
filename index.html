@@ -13,9 +13,7 @@
 <body class="page-body">
 
   <header class="main-header">
-
     <nav class="main-header-nav container">
-
       <a class="main-header-logo" href="index.html"><img class="nav-logo" src="img/nerds-logo.svg" width="159"
           height="65" alt="Логотип Nerds"></a>
       <ul class="site-navigation">
@@ -26,24 +24,17 @@
       </ul>
       <a class="site-navigation-link basket" href="#">Корзина</a>
     </nav>
-
   </header>
 
   <main class="main">
-
     <h1 class="visually-hidden">WEB-Студия</h1>
-
     <div class="slider">
       <div class="container">
-
         <div class="slider-list slider-active">
-
           <p class="slider-title">Долго, дорого, скрупулезно.</p>
           <p class="slider-text">Математически выверенный дизайн<br> для вашего сайта или мобильного приложения</p>
           <a class="slider-link" href="#">Узнать больше</a>
-
           <img class="slider-img1" src="img/nerds-slide-1.png" width="760" height="431" alt="Смартфон">
-
         </div>
 
         <div class="slider-list">
@@ -67,9 +58,7 @@
           <button class="slider-control-btn" type="button" aria-label="Второй слайд"></button>
           <button class="slider-control-btn" type="button" aria-label="Третий слайд"></button>
         </div>
-
       </div>
-
     </div>
 
     <section class="services container">
@@ -100,9 +89,7 @@
 
 
     <section class=" working container">
-
       <div class="working-block-left">
-
         <h2 class="working-title">Мы &mdash; маленькая, но гордая дизайн-студия из Краснодара.</h2>
         <p class="working-text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -112,11 +99,9 @@
           <li class="working-item-left">Мобильных приложений для IOS и Android</li>
           <li class="working-item-left">Слайдшоу и видео для корпоративных презентаций</li>
         </ul>
-
       </div>
 
       <div class="working-block-right">
-
         <p class="working-text-middle">С 2004 года любим точность во всем:</p>
         <ul class="working-list-right">
           <li class="working-item-right">
@@ -132,16 +117,12 @@
             <p class="working-text-normal">Минимальная предоплата</p>
           </li>
         </ul>
-
       </div>
-
     </section>
 
 
     <section class="gallery container">
-
       <h2 class="visually-hidden">Галерея</h2>
-
       <ul class="gallery-list">
         <li class="gallery-item"><a href="#"><img src="img/gallery-logo-1.png" width="199" height="67"
               alt="HTML Академия"></a></li>
@@ -152,16 +133,12 @@
         <li class="gallery-item"><a href="#"><img src="img/gallery-logo-4.png" width="173" height="84" alt="Мишка"></a>
         </li>
       </ul>
-
     </section>
-
   </main>
 
 
   <footer class="footer">
-
     <div class="footer-content-top">
-
       <img class="footer-img" src="img/map.jpg" width="1440" height="416" alt="Карта">
       <div class="footer-contacts">
         <p class="footer-contacts-title">Nёrds DESIGN STUDIO</p>
@@ -169,51 +146,43 @@
           тел. <a class="footer-contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
         <a class="footer-contact-link" href="#">НАПИШИТЕ НАМ</a>
       </div>
-
     </div>
 
     <div class="footer-content-bottom container">
-
-
       <ul class="footer-list">
         <li class="footer-item"><a class="footer-link vk" href="#" aria-label="vkontakte"></a></li>
         <li class="footer-item"><a class="footer-link fb" href="#" aria-label="facebook"></a></li>
         <li class="footer-item"><a class="footer-link insta" href="#" aria-label="instagram"></a></li>
       </ul>
-
-
       <div class="footer-social-block">
         <p class="footer-title">Давайте дружить, это выгодно!</p>
         <p class="footer-text">Скидка 10% для друзей из социальных сетей.</p>
       </div>
-
     </div>
-
   </footer>
-
-
-
-
-
 
   <section class="modal modal-email">
     <h2>Напишите нам</h2>
 
     <form class="modal-form" action="#" method="POST">
-<fieldset>
-      <label for="your-name">Ваше имя:
-        <input class="login-icon-name" type="text" name="name" id="your-name" placeholder="Имя Фамилия">
-      </label>
+      <fieldset>
+        <label class="modal-input-title" for="your-name">Ваше имя:
+          <input class="login-icon" type="text" name="name" id="your-name" placeholder="Имя Фамилия">
+        </label>
+        <label class="modal-input-title" for="your-email">Ваш email:
+          <input class="login-icon" type="email" name="email" id="your-email" placeholder="email@example.com">
+        </label>
+        <label  class="modal-input-title form-message" for="your-email">Текст письма:
+        <textarea class="login-icon form-message" name="email"   rows="5" id="your-email"  placeholder="В свободной форме"></textarea>
+        </label>
+      </fieldset>
 
-      <label for="your-email">Ваш email:
-        <input class="login-icon-email" type="email" name="email" id="your-email" placeholder="email@example.com">
-      </label>
-  </fieldset>
-
-      <button class="slider-link" type="submit">Отправить</button>
+      <button class="form-link" type="submit">Отправить</button>
     </form>
     <button class="modal-close" type="button" aria-label="Закрыть"></button>
   </section>
+  <script src="login.js"></script>
+
 </body>
 
 </html>
