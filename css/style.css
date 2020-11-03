@@ -629,7 +629,7 @@ img {
 
 /********* C A T A L O G **********/
 .catalog {
-  margin-bottom: 59px;
+  margin-bottom: 60px;
 }
 
 .catalog-article {
@@ -644,7 +644,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 87px;
+  margin-bottom: 47px;
 }
 
 .catalog-top {
@@ -730,8 +730,8 @@ img {
   grid-template-rows: 1fr 1fr;
   margin: 0;
   padding: 0;
-  gap: 40px;
-  margin-bottom: 20px;
+  gap: 39px;
+  margin-bottom: 63px;
 }
 
 .catalog-list-item {
@@ -739,9 +739,24 @@ img {
   height: 578px;
   position: relative;
   margin-bottom: 33px;
+  padding-top: 40px;
   border-bottom-right-radius: 5px;
   border-bottom-left-radius: 5px;
 }
+
+.catalog-img {
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1) ;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+
+}
+
+.catalog-img:hover {
+ border: 0;
+}
+
 
 .catalog-list-item::before {
   content: "";
@@ -750,7 +765,6 @@ img {
   position: absolute;
   top: 0;
   left: 0;
-  transform: translateY(-100%);
   background-image: url(../img/browser.svg);
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -857,8 +871,6 @@ img {
   color: var(--basic-black);
   border-radius: 3px;
   padding: 0 15px 0 15px;
-
-
 }
 
 .btn-next:last-child {
@@ -1018,10 +1030,6 @@ fieldset legend {
   margin-bottom: 16px;
 }
 
-.filter-input-checkbox-active+label:hover::before {
-  opacity: 1;
-}
-
 .filter-input-checkbox+label:hover::before {
   opacity: 1;
 }
@@ -1030,26 +1038,10 @@ fieldset legend {
   opacity: 0.2;
 }
 
-.filter-input-radio-active+label:hover::before {
-  opacity: 1;
-}
-
 .filter-input-radio+label:hover::before {
   opacity: 1;
 }
 
-
-.filter-input-radio-active+label::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 25px;
-  height: 25px;
-  background-image: url(../img/radio-on.svg);
-
-  opacity: 0.3;
-}
 
 .filter-input-radio+label::before {
   content: "";
@@ -1059,7 +1051,17 @@ fieldset legend {
   width: 25px;
   height: 25px;
   background-image: url(../img/radio-off.svg);
+  opacity: 0.3;
+}
 
+.filter-input-radio:checked+label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
+  background-image: url(../img/radio-on.svg);
   opacity: 0.3;
 }
 
@@ -1071,21 +1073,24 @@ fieldset legend {
   width: 23px;
   height: 23px;
   background-image: url(../img/checkbox-off.svg);
-
   opacity: 0.3;
 }
 
-.filter-input-checkbox-active+label::before {
+
+.filter-input-checkbox:checked+label::before {
   content: "";
   position: absolute;
-  left: 0;
   top: 0;
+  left: 0;
   width: 25px;
   height: 23px;
-  background-image: url(../img/checkbox-on5.svg);
-
+  background-color: url(../img/checkbox-on.svg) ;
   opacity: 0.3;
+
+
 }
+
+
 
 
 .btn-form {
@@ -1094,7 +1099,7 @@ fieldset legend {
   appearance: none;
   border: 0;
   height: 50px;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1315,6 +1320,7 @@ fieldset legend {
   transform: translate(-50%, -50%);
   background-color: #ffffff;
   color: #000000;
+  box-shadow: 0px 6px 15px rgba(0, 1, 1, 0.25) ;
 }
 
 /* Modal form */
@@ -1418,6 +1424,8 @@ input [type="email"] {
 .form-link {
   padding: 17px 0 15px 0;
   min-width: 260px;
+  font-family: "Roboto";
+  font-style: normal;
   font-weight: 500;
   border: 0;
   line-height: 18px;
@@ -1426,4 +1434,8 @@ input [type="email"] {
   border-radius: 3px;
   background-color: var(--basic-red);
   text-transform: uppercase;
+}
+
+.modal-show {
+  display: block;
 }
