@@ -1,14 +1,14 @@
-const loginLink = document.querySelector(".footer-contact-link");
-const loginPopup =document.querySelector(".modal-email");
-const loginClose =document.querySelector(".modal-close")
+const modalLink = document.querySelector(".footer-contact-link");
+const modalPopup =document.querySelector(".modal-email");
+const modalClose =document.querySelector(".modal-close")
 const loginLogin =document.querySelector(".login-icon")
-loginLink.addEventListener("click",function (evt) {
+modalLink.addEventListener("click", function (evt) {
 evt.preventDefault();
-loginPopup.classList.add("modal-show");
+modalPopup.classList.add("modal-show");
 loginLogin.focus();
 });
 
-loginClose.addEventListener("click", function (evt) {
+modalClose.addEventListener("click", function (evt) {
 evt.preventDefault();
-loginPopup.classList.remove("modal-show");
+modalPopup.classList.remove("modal-show");
 });
