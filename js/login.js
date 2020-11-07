@@ -46,12 +46,12 @@ form.addEventListener("submit", function (evt) {
 });
 
 window.addEventListener("keydown", function (evt) {
-  if (evt.keyCode === 27) {
-    if (modalPopup.classList.contains("modal-show")) {
-      evt.preventDefault();
-      modalPopup.classList.remove("modal-show");
-      modalPopup.classList.remove("modal-error");
-    }
+    if (evt.keyCode === 27) { 
+        if (modalPopup.classList.contains("modal-show")) {
+            evt.preventDefault();
+            modalPopup.classList.remove("modal-show");
+            modalPopup.classList.remove("modal-error");
+        }
 
-  }
-})
+    }
+}) 

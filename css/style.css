@@ -2,27 +2,27 @@
 
 :root {
   --basic-white: #ffffff;
-  --basic-extra-white:#dbdbdb;
+  --basic-extra-white: #dbdbdb;
   --basic-extra-medium-white: #f1f1f1;
   --basic-medium-white: #cfcfcf;
   --basic-medium-space-white: #d7dcde;
   --basic-space-white: #eeeeee;
-  --basic-space-medium-white:#e1e1e1;
+  --basic-space-medium-white: #e1e1e1;
 
   --basic-black: #000000;
   --basic-extra-black: #283136;
   --basic-gray-black: #444444;
   --basic-gray-space: #666666;
   --basic-extra-space: #DfDfDf;
-  --basic--medium-gray-space:#c1c1c1;
+  --basic--medium-gray-space: #c1c1c1;
   --basic-medium-space: #D5D5D5;
   --basic-extra-medium-space: #ababab;
-  --basic-extra-gray-space:#b4b9bb;
+  --basic-extra-gray-space: #b4b9bb;
 
-  --basic-rgba-medium-spase:rgba(255, 255, 255, 0.3);
-  --basic-rgba-medium-gray:rgba(0, 0, 0, 0.1);
-  --basic-rgba-medium-black:rgba(0, 0, 1, 0.25);
-  --basic-rgba-extra-black:rgba(0, 0, 0, 0.3);
+  --basic-rgba-medium-spase: rgba(255, 255, 255, 0.3);
+  --basic-rgba-medium-gray: rgba(0, 0, 0, 0.1);
+  --basic-rgba-medium-black: rgba(0, 0, 1, 0.25);
+  --basic-rgba-extra-black: rgba(0, 0, 0, 0.3);
 
   --basic-red: #FB565A;
   --medium-red: #e74246;
@@ -53,6 +53,11 @@
   width: 1px;
   height: 1px;
   margin: -1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
 }
 
 a {
@@ -80,10 +85,10 @@ img {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
-  min-width: 1440px;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
@@ -264,6 +269,7 @@ img {
 }
 
 .slider-controls {
+  display: flex;
   position: absolute;
   bottom: 90px;
   left: 47%;
@@ -282,23 +288,25 @@ img {
   border: none;
 }
 
-.slider-control-btn1::before {
+.btn-slider::before {
   content: "";
   position: absolute;
-  top: 30%;
-  left: 30%;
+  top: 50%;
+  left: 50%;
   width: 8px;
   height: 8px;
+  transform: translate(-50%, -50%);
   background-color: var(--basic-white);
-  border: 2px solid var( --basic--medium-gray-space);
+  border: 2px solid var(--basic--medium-gray-space);
   border-radius: 50%;
 }
 
 .slider-link {
-  padding: 17px 54px 15px 54px;
-  max-width: 240px;
+  padding:  0 15px 0 15px;
+  min-width: 240px;
+  height: 50px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 51px;
   color: var(--basic-white);
   text-align: center;
   border-radius: 3px;
@@ -323,7 +331,7 @@ img {
 .services {
   border-bottom: 2px solid var(--basic-space-white);
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 40px;padding-bottom: 80px;
 }
 
 .services-list {
@@ -369,10 +377,12 @@ img {
 }
 
 .services-link {
-  margin-bottom: 80px;
-  padding: 17px 40px 15px 39px;
+  display: block;
+  padding: 0 15px 0 15px;
+  min-width: 160px;
+  height: 50px;
   font-weight: 500;
-  line-height: 18px;
+  line-height: 51px;
   text-align: center;
   text-transform: uppercase;
   color: var(--basic-white);
@@ -463,7 +473,6 @@ img {
   position: relative;
   list-style: none;
   margin: 0;
-  font-weight: normal;
   padding-left: 36px;
   margin-bottom: 24px;
 
@@ -1056,7 +1065,7 @@ fieldset legend {
   appearance: none;
   border: 0;
   height: 50px;
-  font-family: "Roboto", Arial, sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1087,11 +1096,14 @@ fieldset legend {
 
 .footer-content-top {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 39px;
+  height: 416px;
+ 
 }
 
 .footer-map {
   position: absolute;
+  width: 100%;
   left: 0;
   bottom: 0;
 }
@@ -1110,18 +1122,23 @@ fieldset legend {
 }
 
 .footer-img {
+  display: block;
   object-fit: cover;
-  width: 100%;
   height: 416px;
+  width: 100%;
 }
+
+.footer-iframe-map {
+  display: block;
+  width: 100%;
+ }
 
 .footer-contacts-title {
   font-size: 18px;
   padding: 0;
   text-align: left;
   margin: 0;
-  margin-bottom: 23px;
-  margin-top: -4px;
+  margin-bottom: 22px;
   font-weight: bold;
   line-height: 30px;
   color: var(--basic-black);
@@ -1145,8 +1162,10 @@ fieldset legend {
   display: block;
   color: var(--basic-white);
   background-color: var(--basic-red);
-  padding: 13px 44px 16px 44px;
+  padding: 0 15px 0 15px;
   height: 50px;
+  min-width: 160px;
+  line-height: 52px;
   border-radius: 3px;
 }
 
@@ -1156,12 +1175,13 @@ fieldset legend {
 
 .footer-contact-link:active {
   background-color: var(--basic-dark-red);
-  color: var( --basic-rgba-medium-spase);
+  color: var(--basic-rgba-medium-spase);
 }
 
 .footer-content-bottom {
   display: flex;
   align-items: center;
+  margin-bottom: 58px;
 }
 
 .footer-list {
@@ -1181,7 +1201,7 @@ fieldset legend {
   position: relative;
   width: 81px;
   height: 81px;
-  background: linear-gradient(0deg, var(--basic-space-medium-white), var(--basic-space-medium-white)),var(--basic-white);
+  background: linear-gradient(0deg, var(--basic-space-medium-white), var(--basic-space-medium-white)), var(--basic-white);
   border-radius: 50%;
   display: block;
   margin-right: 9px;
@@ -1232,6 +1252,7 @@ fieldset legend {
   background-repeat: no-repeat;
   background-position: 0 0;
 }
+
 .insta:active::before {
   opacity: 0.3;
 }
@@ -1246,7 +1267,7 @@ fieldset legend {
 
 .footer-link:active {
   background: var(--basic-dark-red);
-  color: var( --basic-rgba-medium-spase);
+  color: var(--basic-rgba-medium-spase);
 }
 
 .footer-title {
@@ -1262,6 +1283,7 @@ fieldset legend {
   line-height: 22px;
   color: var(--basic-gray-black);
 }
+
 
 /************ M O D A L *************/
 
@@ -1364,6 +1386,7 @@ input [type="email"] {
 .modal-form fieldset {
   border: none;
   padding: 0;
+  margin: 0;
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 10px;
@@ -1371,13 +1394,13 @@ input [type="email"] {
 }
 
 .form-link {
-  padding: 17px 0 15px 0;
+  padding: 15px 0 15px 0;
   min-width: 260px;
-  font-family: "Roboto", Arial, sans-serif;
-  font-style: normal;
+  height: 50px;
+  font-family: "Roboto", "Arial", sans-serif;
   font-weight: 500;
   border: 0;
-  line-height: 18px;
+  line-height: 19px;
   color: var(--basic-white);
   text-align: center;
   border-radius: 3px;
@@ -1387,4 +1410,60 @@ input [type="email"] {
 
 .modal-show {
   display: block;
+  animation-name: bounce; 
+  animation-duration: 0.6s;
+}
+
+.modal-error {   
+  animation-name: shake; 
+  animation-duration: 1s;
+}
+
+/* Animations */
+
+
+/*  подлива)   */
+  @keyframes bounce {
+    0% {
+      transform: translateY(-2000px);
+      transform: translateY(50%);
+    }
+  
+    70% {
+      transform: translateY(30px);
+      transform: translateY(50%);
+    }
+  
+    90% {
+      transform: translateY(-10px);
+      transform: translateY(50%);
+    }
+  
+    100% {
+      transform: translateY(0);
+      transform: translateY(50%);
+    }
+  }
+
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
 }
