@@ -1160,6 +1160,8 @@ fieldset legend {
 
 .footer-contact-link {
   display: block;
+  text-transform: uppercase;
+  font-weight: 500;
   color: var(--basic-white);
   background-color: var(--basic-red);
   padding: 0 15px 0 15px;
@@ -1425,23 +1427,23 @@ input [type="email"] {
 /*  подлива)   */
   @keyframes bounce {
     0% {
-      transform: translateY(-2000px);
-      transform: translateY(50%);
+      transform: translate(-2000px, 50%);
+     
     }
   
     70% {
-      transform: translateY(30px);
-      transform: translateY(50%);
+      transform: translate(30px, 50%);
+     
     }
   
     90% {
-      transform: translateY(-10px);
-      transform: translateY(50%);
+      transform: translate(-10px, 50%);
+      
     }
   
     100% {
-      transform: translateY(0);
-      transform: translateY(50%);
+      transform: translate(0, 50%);
+  
     }
   }
 
