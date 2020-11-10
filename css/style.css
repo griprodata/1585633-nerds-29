@@ -895,10 +895,10 @@ img {
   line-height: 50px;
   padding: 0 15px 0 15px;
 }
-
 .btn-active:active {
   box-shadow: inset 0px 3px 0px var(--basic-rgba-medium-gray);
   border: 0;
+  pointer-events: none;
 }
 
 /*Форма каталога  */
