@@ -27,8 +27,10 @@
     </header>
 
     <main class="main">
-      <section class="catalog-article conteiner">
-        <h1 class="shop ">Магазин готовых шаблонов</h1>
+      <section class="catalog-article">
+        <div class="container">
+          <h1 class="shop ">Магазин готовых шаблонов</h1>
+        </div>
       </section>
 
       <div class="form-catalog container">
@@ -60,19 +62,19 @@
               <legend>Сетка:</legend>
               <ul>
                 <li class="filter-option filter-radio">
-                  <input class="visually-hidden filter-input-radio filter-input" type="radio"
-                    name="product-verstka" value="adaptive" id="filter-adaptive" checked>
-                  <label for="filter-adaptive">Адаптивная</label>
+                  <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-verstka"
+                    value="adaptive" id="filter-adaptive" checked>
+                  <label tabindex="0" for="filter-adaptive">Адаптивная</label>
                 </li>
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-verstka"
                     value="fixed" id="filter-fixed">
-                  <label for="filter-fixed">Фиксированная</label>
+                  <label tabindex="0" for="filter-fixed">Фиксированная</label>
                 </li>
                 <li class="filter-option filter-radio">
                   <input class="visually-hidden filter-input-radio filter-input" type="radio" name="product-verstka"
                     value="rubber" id="filter-rubber">
-                  <label for="filter-rubber">Резиновая</label>
+                  <label tabindex="0" for="filter-rubber">Резиновая</label>
                 </li>
               </ul>
             </fieldset>
@@ -83,27 +85,27 @@
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="slider"
                     id="filter-slider" checked>
-                  <label for="filter-slider">Слайдер</label>
+                  <label tabindex="0" for="filter-slider">Слайдер</label>
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="advantages"
                     id="filter-advantages">
-                  <label for="filter-advantages">Блок преимуществ</label>
+                  <label tabindex="0" for="filter-advantages">Блок преимуществ</label>
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="news"
                     id="filter-news" checked>
-                  <label for="filter-news">Новости</label>
+                  <label tabindex="0" for="filter-news">Новости</label>
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="gallery"
                     id="filter-gallery">
-                  <label for="filter-gallery">Галерея</label>
+                  <label tabindex="0" for="filter-gallery">Галерея</label>
                 </li>
                 <li class="filter-option filter-checkbox">
                   <input class="visually-hidden filter-input-checkbox filter-input" type="checkbox" name="basket"
                     id="filter-basket">
-                  <label for="filter-basket">Корзина</label>
+                  <label tabindex="0" for="filter-basket">Корзина</label>
                 </li>
               </ul>
             </fieldset>
@@ -126,7 +128,7 @@
           </div>
 
           <ul class="catalog-list">
-            <li class="catalog-list-item">
+            <li tabindex="0" class="catalog-list-item">
               <img class="catalog-img" src="img/sedona.jpg" width="358" height="578" alt="сайт Sedona">
               <div class="catalog-desc">
                 <h3 class="catalog-title"><a href="">Sedona</a></h3>
@@ -135,7 +137,7 @@
               </div>
             </li>
 
-            <li class="catalog-list-item">
+            <li tabindex="0" class="catalog-list-item">
               <img class="catalog-img" src="img/pink.jpg" width="358" height="578" alt="сайт Pink">
               <div class="catalog-desc">
                 <h3 class="catalog-title"><a href="">Pink app</a></h3>
@@ -144,7 +146,7 @@
               </div>
             </li>
 
-            <li class="catalog-list-item">
+            <li tabindex="0" class="catalog-list-item">
               <img class="catalog-img" src="img/barbershop.jpg" width="358" height="578" alt="сайт Barbershop">
               <div class="catalog-desc">
                 <h3 class="catalog-title"><a href="">Barbershop</a></h3>
@@ -153,7 +155,7 @@
               </div>
             </li>
 
-            <li class="catalog-list-item">
+            <li tabindex="0" class="catalog-list-item">
               <img class="catalog-img" src="img/mishka.jpg" width="358" height="578" alt="сайт Mishka">
               <div class="catalog-desc">
                 <h3 class="catalog-title"><a href="">MISHKA</a></h3>
@@ -162,7 +164,7 @@
               </div>
             </li>
 
-            <li class="catalog-list-item">
+            <li tabindex="0" class="catalog-list-item">
               <img class="catalog-img" src="img/aplus.jpg" width="358" height="578" alt="сайт A Plus">
               <div class="catalog-desc">
                 <h3 class="catalog-title"><a href="">A Plus</a></h3>
@@ -171,7 +173,7 @@
               </div>
             </li>
 
-            <li class="catalog-list-item">
+            <li tabindex="0" class="catalog-list-item">
               <img class="catalog-img" src="img/kvast.jpg" width="358" height="578" alt="сайт КВАСТ">
               <div class="catalog-desc">
                 <h3 class="catalog-title"><a href="">КВАСТ</a></h3>
@@ -200,13 +202,17 @@
 
     <footer class="footer">
       <div class="footer-content-top">
-        <div class="footer-map"><iframe class="footer-iframe-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003044!2d30.320858716036227!3d59.93871916905428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604519369673!5m2!1sru!2sru" width="1440" height="416"  style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></div>
+        <div class="footer-map"><iframe class="footer-iframe-map"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003044!2d30.320858716036227!3d59.93871916905428!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604519369673!5m2!1sru!2sru"
+            width="1440" height="416" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
         <img class="footer-img" src="img/map.jpg" width="1440" height="416" alt="Карта">
         <div class="footer-contacts">
           <p class="footer-contacts-title">Nёrds DESIGN STUDIO</p>
-          <p class="footer-contacts-address">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8<br><br>
-            тел. <a class="footer-contacts-phone" href="tel:+78122757575">+7 (812) 275-75-75</a></p>
-          <a class="footer-contact-link" href="#">НАПИШИТЕ НАМ</a>
+          <p class="footer-contacts-address1">191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p class="footer-contacts-address2">тел. <a class="footer-contacts-phone" href="tel:+78122757575">+7 (812)
+              275-75-75</a></p>
+          <a class="footer-contact-link" href="#">Напишите нам</a>
         </div>
       </div>
 
@@ -226,7 +232,7 @@
 
     <section class="modal modal-email">
       <h2>Напишите нам</h2>
-  
+
       <form class="modal-form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset>
           <label class="modal-input-title" for="your-name">Ваше имя:
@@ -235,17 +241,18 @@
           <label class="modal-input-title" for="your-email">Ваш email:
             <input class="login-icon" type="email" name="email" id="your-email" placeholder="email@example.com">
           </label>
-          <label  class="modal-input-title form-message" for="your-message">Текст письма:
-          <textarea class="login-icon form-message" name="text"   rows="5" id="your-message"  placeholder="В свободной форме"></textarea>
+          <label class="modal-input-title form-message" for="your-message">Текст письма:
+            <textarea class="login-icon form-message" name="text" rows="5" id="your-message"
+              placeholder="В свободной форме"></textarea>
           </label>
         </fieldset>
-  
+
         <button class="form-link" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button" aria-label="Закрыть"></button>
     </section>
 
-<script src="js/login.js"></script>
+    <script src="js/login.js"></script>
 
   </body>
 
